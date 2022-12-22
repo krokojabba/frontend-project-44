@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import * as cli from "../src/cli.js";
+import * as cli from "../src/cli.js"; //Подключаем модуль, в котором есть ф-я приветствия
 
-console.log("Welcome to the Brain Games!");
-const userName = cli.askName();
-console.log(`Hellow,  ${userName}!`);
+cli.askNameAndHellow(); //Спрашиваем имя и приветствуем
