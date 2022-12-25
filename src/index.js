@@ -53,8 +53,11 @@ export default (gameCondition, questions, rightAnswers) => {
     //3.2 Принимаем ответ от пользователя
     userAnswer = readlineSync.question("Your answer: "); //считываем ответ пользователя
 
+    //console.log(userAnswer + 10);
+    //console.log(rightAnswers[currentQuestion - 1].toString() + 10);
+
     //3.3 Сравниваем ответ пользователя с правильным ответом
-    if (userAnswer === rightAnswers[currentQuestion - 1]) {
+    if (userAnswer === rightAnswers[currentQuestion - 1].toString()) {
       //3.4 В случае правильного ответа прибавляем очко и переходим к следующему вопросу (пункт 3.1)
       console.log("Correct!");
       userScore += 1;
