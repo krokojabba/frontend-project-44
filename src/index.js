@@ -29,7 +29,7 @@ import askNameAndHellow from "../src/cli.js"; //Подключаем модул�
 
 export default (gameCondition, questions, rightAnswers) => {
   const scoreForWin = 3; //количество очков для победы
-  const maxRounds = 3; //максимальное кол-во раундов в игре
+  const maxRounds = 1; //максимальное кол-во раундов в игре
 
   //1. Спрашиваем имя пользователя и приветствуем его
   const userName = askNameAndHellow();
