@@ -79,6 +79,6 @@ export default () => {
   // console.log(questions);
   // console.log(rightAnswers);
 
-  //2. Вызываем метод по умолчанию из модуля index.js
+  // 2. Вызываем метод по умолчанию из модуля index.js
   index(gameCondition, questions, rightAnswers);
 };
