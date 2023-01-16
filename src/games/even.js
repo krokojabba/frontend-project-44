@@ -12,10 +12,11 @@ export default () => {
     questions.push(generateRandNumber());
     if (isEven(questions[i])) {
       rightAnswers.push('yes');
-    } else {s
+    } else {
+      s;
       rightAnswers.push('no');
     }
   }
 
-s  index(gameCondition, questions, rightAnswers);
+  index(gameCondition, questions, rightAnswers);
 };

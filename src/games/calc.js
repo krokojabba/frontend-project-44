@@ -42,5 +42,5 @@ export default () => {
     questions.push(currentQuestion);
   }
 
-s  index(gameCondition, questions, rightAnswers);
+  index(gameCondition, questions, rightAnswers);
 };
