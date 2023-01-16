@@ -23,16 +23,19 @@ brain-prime:
 
 [![asciicast](https://asciinema.org/a/igUH1goTXMHO42qaQcaeClTzD.svg)](https://asciinema.org/a/igUH1goTXMHO42qaQcaeClTzD)
 
-<div><script id="asciicast-igUH1goTXMHO42qaQcaeClTzD" src="https://asciinema.org/a/igUH1goTXMHO42qaQcaeClTzD.js" async></script></div>
-
 Установка:
 
 1. Клонируйте данный репозиторий на свой компьютер.
 2. Установите пакет: выполнике команду npm install из корневой папки репозитория.
 3. Установите пакет в систему с помощью команды npm link.
 4. Для запуска игр используйте команды:
-   *brain-even
-   *brain-calc
-   *brain-gcd
-   *brain-progression
-   \*brain-prime
+
+   brain-even
+
+   brain-calc
+
+   brain-gcd
+
+   brain-progression
+
+   brain-prime
