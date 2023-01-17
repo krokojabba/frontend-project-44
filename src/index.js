@@ -24,8 +24,8 @@ export default (gameCondition, questions, rightAnswers) => {
       console.log('Correct!');
       userScore += 1;
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. \
-        Correct answer was '${rightAnswers[currentQuestion - 1]}'.`);
+      console.log(`'${userAnswer}' is wrong answer. Correct answer was \
+'${rightAnswers[currentQuestion - 1]}'.`);
       console.log(`Let's try again, ${userName}!`);
       userScore = 0;
       currentRound += 1;

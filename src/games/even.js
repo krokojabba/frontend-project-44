@@ -1,5 +1,6 @@
 import generateRandNumber from '../generateRandNumber.js';
 import index from '../index.js';
+
 const isEven = (number) => number % 2 === 0;
 
 export default () => {
@@ -13,7 +14,6 @@ export default () => {
     if (isEven(questions[i])) {
       rightAnswers.push('yes');
     } else {
-      s;
       rightAnswers.push('no');
     }
   }
