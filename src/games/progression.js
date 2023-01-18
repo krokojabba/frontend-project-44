@@ -26,9 +26,9 @@ export default () => {
   const length = generateRandNumber(minLength, maxLength);
   const inc = generateRandNumber(1, maxInc);
   const missingPos = generateRandNumber(1, length);
-  let progression = getProgression(firstNum, length, inc);
+  const progression = getProgression(firstNum, length, inc);
 
-  let answer = progression[missingPos - 1];
+  const answer = progression[missingPos - 1];
   progression[missingPos - 1] = '..';
   const question = arrayToString(progression);
   return [question, answer];
