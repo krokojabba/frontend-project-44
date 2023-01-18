@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import calc from '../src/games/calc.js';
+import generateRound from '../src/games/calc.js';
+import runEngine from '../src/index.js';
 
-calc();
+runEngine('What is the result of the expression?', generateRound);

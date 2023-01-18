@@ -1,5 +1,4 @@
 import generateRandNumber from '../generateRandNumber.js';
-import index from '../index.js';
 
 const getProgression = (firstNum, length, inc) => {
   const result = [];
@@ -18,35 +17,19 @@ const arrayToString = (arr) => {
 };
 
 export default () => {
-  const gameCondition = 'What number is missing in the progression?';
-
-  const questions = [];
-  const rightAnswers = [];
-  let progression;
-
   const maxFirtsNum = 10;
   const minLength = 5;
   const maxLength = 15;
   const maxInc = 10;
 
-  let firstNum;
-  let length;
-  let inc;
-  let missingPos;
+  const firstNum = generateRandNumber(1, maxFirtsNum);
+  const length = generateRandNumber(minLength, maxLength);
+  const inc = generateRandNumber(1, maxInc);
+  const missingPos = generateRandNumber(1, length);
+  let progression = getProgression(firstNum, length, inc);
 
-  for (let i = 0; i < 9; i += 1) {
-    firstNum = generateRandNumber(1, maxFirtsNum);
-    length = generateRandNumber(minLength, maxLength);
-    inc = generateRandNumber(1, maxInc);
-    missingPos = generateRandNumber(1, length);
-    progression = getProgression(firstNum, length, inc);
-
-    rightAnswers.push(progression[missingPos - 1]);
-
-    progression[missingPos - 1] = '..';
-
-    questions.push(arrayToString(progression));
-  }
-
-  index(gameCondition, questions, rightAnswers);
+  let answer = progression[missingPos - 1];
+  progression[missingPos - 1] = '..';
+  const question = arrayToString(progression);
+  return [question, answer];
 };

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import gcd from '../src/games/gcd.js';
+import generateRound from '../src/games/gcd.js';
+import runEngine from '../src/index.js';
 
-gcd();
+runEngine('Find the greatest common divisor of given numbers.', generateRound);
